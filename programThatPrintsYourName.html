@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program That Prints Your Name!</title>
+    <style>
+        *, *::before, *::after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        .container-fluid{
+            width: 100%;
+            height: 100vh;
+            padding: 10%;
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+        }
+
+        .container{
+            width: 100%;
+            height: auto;
+            padding: 0 5%;
+            color: #fff;
+            border-right: 2px dashed #fff;
+            border-left: 2px dashed #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container h1{
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .container h2{
+            font-size: 2.5rem;
+            text-align: center;
+            line-height: 4rem;
+        }
+
+        .container h3{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .container h3 span{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="container">
+            <h1 class="title">
+                A Program that prints out my name!
+            </h1>
+            
+            <h2> Hi, <br> <span class="name"> </span></h2>
+            
+            <h3>
+                <span>N.B:</span> This program is written with JavaScript Language
+            </h3>
+        </div>
+    </div>
+
+    <script>
+        
+        alert('This is a program that prints out my name')
+        const name = document.querySelector('.name')
+
+        name.innerText = 'I am Dada Ajibola'
+
+    </script>
+
+</body>
+</html>
